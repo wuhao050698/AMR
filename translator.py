@@ -49,7 +49,6 @@ def translator(input,output):
         else:
             if len(s_line) == 2:
                 if s_line[1] not in judge:
-                    instance.append({'var': s_line[1], 'instance': s_line[1]})
                     judge.append(s_line[1])
             else:
                 instance.append({'var': s_line[1], 'instance': s_line[2]})
