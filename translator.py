@@ -4,46 +4,35 @@ def translator(input,output):
         loads = load.readlines()
     h = 0
     cnt = 0
-    temp = ''
     instance = []  # the instance
     arg = []  # the edge
-    judge = [] # judge the same instance
+    judge = []  # judge the same instance
+    last_rank = 0  # Determine the number of layers of the current node according to the brackets
+    last_var = ''  # last variable
+    father = {}  # Record the parent node of each layer
 
     # process
     for line in loads:
 
-        # extract the original text
-        if line[0] == '#':
-            cnt += 1
-            if cnt == 2:
-                with open(output, 'a', encoding='utf8') as fo:
-                    fo.write(line)
-            continue
-
-        # initialize parameters and variables
-        if cnt == 3:
+        if line == '\n':
             h = 0
             cnt = 0
-            instance = [] # the instance
-            arg = [] # the edge
-            judge = [] # judge the same instance
-
-        # If the AMR has ended, store the generated triples in a file
-        if line == '\n':
-            with open(output, 'a', encoding='utf8') as fo:
-                for i in instance:  # the instance
-                    fo.write("instance(" + i['var'] + "," + i['instance'] + ")" + "\n")
-                for i in arg:  # the arg
-                    fo.write(i['rel'] + "(" + i['a'] + "," + i['b'] + ")" + "\n")
-                fo.write("\n")
+            instance = []  # the instance
+            arg = []  # the edge
+            judge = []  # judge the same instance
+            last_rank = 0  # Determine the number of layers of the current node according to the brackets
+            last_var = ''  # last variable
+            father = {}  # Record the parent node of each layer
             continue
+        if line[0] == '#':
+            continue
+
 
         # preprocess
         h += 1
         flag = 0
         line = line.strip('\n')
-        if line[-1] != ')':
-            flag = 1
+        rank=line.count('(')-line.count(')')+last_rank
         line = line.replace('(', '')
         line = line.replace(')', '')
         line = line.replace('/ ', '')
@@ -54,7 +43,8 @@ def translator(input,output):
         if h == 1:  # the root
             instance.append({'var': s_line[0], 'instance': s_line[1]})
             judge.append(s_line[0])
-            temp = s_line[0]
+            last_rank = rank
+            last_var = s_line[0]
             continue
         else:
             if len(s_line) == 2:
@@ -64,10 +54,22 @@ def translator(input,output):
             else:
                 instance.append({'var': s_line[1], 'instance': s_line[2]})
                 judge.append(s_line[1])
-        arg.append({'rel': s_line[0], 'a': temp, 'b': s_line[1]})
-        # the next point
-        if flag == 1:
-            temp = s_line[1]
+        # if it's a new laywer, store its father
+        if last_rank not in father.keys():
+            father[last_rank] = last_var
+        last_var = s_line[1]
+        arg.append({'rel': s_line[0], 'a': father[last_rank], 'b': s_line[1]})
+        last_rank = rank
+
+        # If the AMR has ended, store the generated triples in a file
+        if last_rank==0:
+            with open(output, 'a', encoding='utf8') as fo:
+                for i in instance:  # the instance
+                    fo.write("instance(" + i['var'] + "," + i['instance'] + ")" + "\n")
+                for i in arg:  # the arg
+                    fo.write(i['rel'] + "(" + i['a'] + "," + i['b'] + ")" + "\n")
+                fo.write("\n")
+            continue
 
 
 if __name__ == '__main__':
