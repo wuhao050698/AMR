@@ -32,7 +32,7 @@ def translator(input,output):
         h += 1
         flag = 0
         line = line.strip('\n')
-        rank=line.count('(')-line.count(')')+last_rank
+        rank=line.count('(')-line.count(')')+last_rank  # judge its layer by the buckets
         line = line.replace('(', '')
         line = line.replace(')', '')
         line = line.replace('/ ', '')
