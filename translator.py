@@ -27,6 +27,8 @@ def translator(input,output):
 
         # process one AMR
         if line == '\n' and amr != '':
+            with open(output, 'a', encoding='utf8') as fo:
+                fo.write('\n')
             instance = []  # the instance
             arg = []  # the relation
             stack = []  # store each layer's instance in the stack judged by the brackets
@@ -86,8 +88,9 @@ def translator(input,output):
                     fo.write("instance(" + i['var'] + "," + i['instance'] + ")" + "\n")
                 for i in arg:
                     fo.write(i['rel'] + "(" + i['a'] + "," + i['b'] + ")" + "\n")
-                fo.write("\n")
 
+        with open(output, 'a', encoding='utf8') as fo:
+            fo.write(line)
         line = line.strip()
         line = line.strip('\n')
         amr += line

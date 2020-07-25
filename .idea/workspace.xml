@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="82ac54bf-b16d-49b8-a20e-a8aad0ac7e31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translator.py" beforeDir="false" afterPath="$PROJECT_DIR$/translator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triples.txt" beforeDir="false" afterPath="$PROJECT_DIR$/triples.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/translator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="51" selection-start-line="51" selection-end-line="51" selection-end-column="78" />
+            <state relative-caret-position="68">
+              <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -25,8 +27,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="114">
-                <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+              <first_editor relative-caret-position="76">
+                <caret line="4" column="81" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="81" />
               </first_editor>
               <second_editor />
             </state>
@@ -46,6 +48,8 @@
     <findStrings>
       <find>temp</find>
       <find>now</find>
+      <find>print</find>
+      <find>cnt</find>
     </findStrings>
     <replaceStrings>
       <replace>last_var</replace>
@@ -64,8 +68,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="73" />
-    <option name="width" value="1790" />
+    <option name="x" value="70" />
+    <option name="width" value="1793" />
     <option name="height" value="1071" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -74,7 +78,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,6 +89,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -93,6 +97,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wu\Desktop\AMR\try" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,7 +156,9 @@
       <updated>1595463416803</updated>
       <workItem from="1595463419267" duration="1320000" />
       <workItem from="1595473835913" duration="1473000" />
-      <workItem from="1595479469568" duration="4744000" />
+      <workItem from="1595479469568" duration="9418000" />
+      <workItem from="1595558197183" duration="879000" />
+      <workItem from="1595686448749" duration="379000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1595485085617</created>
@@ -170,28 +181,42 @@
       <option name="project" value="LOCAL" />
       <updated>1595485501914</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix the instance(x,x)">
+      <created>1595492530256</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595492530256</updated>
+    </task>
+    <task id="LOCAL-00005" summary="a new translator">
+      <created>1595511862924</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595511862924</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7537000" />
+    <option name="totallyTimeSpent" value="13469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2358804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24252492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32819074" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32819074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32959327" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959327" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -209,29 +234,32 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update readme" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="fix the instance(x,x)" />
+    <MESSAGE value="a new translator" />
+    <option name="LAST_COMMIT_MESSAGE" value="a new translator" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AMR$translator.coverage" NAME="translator Coverage Results" MODIFIED="1595492401757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AMR$translator.coverage" NAME="translator Coverage Results" MODIFIED="1595686909775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/translator.ipynb">
+    <entry file="file://$PROJECT_DIR$/try/translator.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt" />
+    <entry file="file://$PROJECT_DIR$/translator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="81" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="81" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="51" selection-start-line="51" selection-end-line="51" selection-end-column="78" />
         </state>
       </provider>
     </entry>
