@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="82ac54bf-b16d-49b8-a20e-a8aad0ac7e31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translator.py" beforeDir="false" afterPath="$PROJECT_DIR$/translator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triples.txt" beforeDir="false" afterPath="$PROJECT_DIR$/triples.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/translator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+            <state relative-caret-position="416">
+              <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -68,8 +66,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="70" />
-    <option name="width" value="1793" />
+    <option name="x" value="69" />
+    <option name="width" value="1794" />
     <option name="height" value="1071" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -158,7 +156,7 @@
       <workItem from="1595473835913" duration="1473000" />
       <workItem from="1595479469568" duration="9418000" />
       <workItem from="1595558197183" duration="879000" />
-      <workItem from="1595686448749" duration="379000" />
+      <workItem from="1595686448749" duration="1130000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1595485085617</created>
@@ -195,22 +193,28 @@
       <option name="project" value="LOCAL" />
       <updated>1595511862924</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add the original AMR text">
+      <created>1595687107869</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595687107869</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13469000" />
+    <option name="totallyTimeSpent" value="14220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24252492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32819074" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32819074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -236,7 +240,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="fix the instance(x,x)" />
     <MESSAGE value="a new translator" />
-    <option name="LAST_COMMIT_MESSAGE" value="a new translator" />
+    <MESSAGE value="add the original AMR text" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the original AMR text" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AMR$translator.coverage" NAME="translator Coverage Results" MODIFIED="1595686909775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -248,8 +253,8 @@
     <entry file="file://$PROJECT_DIR$/test.txt" />
     <entry file="file://$PROJECT_DIR$/translator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+        <state relative-caret-position="416">
+          <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
         </state>
       </provider>
     </entry>
